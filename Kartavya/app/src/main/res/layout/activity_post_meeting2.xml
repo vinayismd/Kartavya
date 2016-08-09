@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="vinayism.kartavya.Post_meeting2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose Team"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Academics"
+        android:id="@+id/cbacademic"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="School"
+        android:id="@+id/cbschool"
+        android:layout_below="@+id/cbacademic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Health"
+        android:id="@+id/cbhealth"
+        android:layout_below="@+id/cbschool"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Teacher"
+        android:id="@+id/cbteacher"
+        android:layout_below="@+id/cbhealth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Funding"
+        android:id="@+id/cbfunding"
+        android:layout_below="@+id/cbteacher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="CMT"
+        android:id="@+id/cbcmt"
+        android:layout_below="@+id/cbfunding"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="None"
+        android:id="@+id/cbnone"
+        android:layout_below="@+id/cbcmt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Members"
+        android:id="@+id/btnpmgetmem"
+        android:layout_below="@+id/cbnone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+</RelativeLayout>

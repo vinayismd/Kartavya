@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="My Info"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:background="@drawable/arrow4"
+        android:id="@+id/btnpromyinfo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="Update Info"
+        android:padding="4dp"
+        android:background="@drawable/arrow3"
+        android:id="@+id/btnproupdate"
+        android:layout_below="@+id/btnpromyinfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="Notifications"
+        android:background="@drawable/arrow5"
+        android:id="@+id/btnpronoti"
+        android:padding="4dp"
+        android:layout_below="@+id/btnproupdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="Post Achievement"
+        android:id="@+id/btnproachv"
+        android:padding="4dp"
+        android:background="@drawable/arrow4"
+        android:layout_below="@+id/btnpronoti"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="Post Meeting"
+        android:background="@drawable/arrow3"
+        android:id="@+id/btnpromeet"
+        android:padding="4dp"
+        android:layout_below="@+id/btnproachv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="Centre Problems"
+        android:background="@drawable/arrow5"
+        android:id="@+id/btnprocntrprob"
+        android:padding="4dp"
+        android:layout_below="@+id/btnpromeet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

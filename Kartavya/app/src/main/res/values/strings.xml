@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kartavya</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_members">Members</string>
+
+    <string-array name="spnmemcentre">
+        <item>Centre1</item>
+        <item>Centre2</item>
+        <item>Centre3</item>
+        <item>Centre4</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="spnmemteam">
+        <item>Academics</item>
+        <item>School</item>
+        <item>Health</item>
+        <item>Teacher</item>
+        <item>Funding</item>
+        <item>CMT</item>
+        <item>None</item>
+    </string-array>
+
+    <string name="title_activity_member__list">Member_List</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_achievements">Achievements</string>
+    <string name="title_activity_myinfo">Myinfo</string>
+    <string name="title_activity_centre">Centre</string>
+    <string name="title_activity_centre_problems">Centre_problems</string>
+    <string name="title_activity_post_centreproblem">Post_centreproblem</string>
+    <string name="title_activity_post_achievement">Post_achievement</string>
+    <string name="title_activity_update_profile">UpdateProfile</string>
+    <string name="title_activity_post_meeting">Post_meeting</string>
+    <string name="title_activity_meeting_list">Meeting_list</string>
+    <string name="title_activity_post_meeting2">Post_meeting2</string>
+    <string name="title_activity_pm_members">Pm_members</string>
+    <string name="title_activity_post_meeting12">Post_meeting12</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_internship">Internship</string>
+    <string name="title_activity_sponsors">Sponsors</string>
+    <string name="title_activity_prakash">Prakash</string>
+    <string name="title_activity_moreon_prakash">MoreonPrakash</string>
+    <string name="title_activity_centre1">Centre1</string>
+    <string name="title_activity_centre2">Centre2</string>
+    <string name="title_activity_centre3">Centre3</string>
+    <string name="title_activity_centre4">Centre4</string>
+    <string name="title_activity_computer__centre">Computer_Centre</string>
+    <string name="title_activity_other_events">OtherEvents</string>
+    <string name="title_activity_temp1">Temp1</string>
+    <string name="title_activity_temp2">Temp2</string>
+    <string name="title_activity_splash">Splash</string>
+
+</resources>

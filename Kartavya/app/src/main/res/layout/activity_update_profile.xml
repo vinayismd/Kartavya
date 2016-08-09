@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.app.MainActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/tvname"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etname"
+                android:layout_below="@+id/tvname"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Admission No."
+                android:layout_below="@+id/etname"
+                android:id="@+id/tvadmno"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etadmno"
+                android:layout_below="@+id/tvadmno"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:layout_below="@+id/etadmno"
+                android:id="@+id/tvpass"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etpass"
+                android:layout_below="@+id/tvpass"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Year"
+                android:layout_below="@+id/etpass"
+                android:id="@+id/tvyear"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etyear"
+                android:layout_below="@+id/tvyear"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Branch"
+                android:layout_below="@+id/etyear"
+                android:id="@+id/tvbranch"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etbranch"
+                android:layout_below="@+id/tvbranch"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Centre"
+                android:layout_below="@+id/etbranch"
+                android:id="@+id/tvcentre"
+
+                android:padding="10dp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvcentre"
+                android:id="@+id/spnregcntr">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Team"
+                android:layout_below="@+id/spnregcntr"
+                android:id="@+id/tvteam"
+
+                android:padding="10dp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvteam"
+                android:id="@+id/spnregteam">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Working Under"
+                android:layout_below="@+id/spnregteam"
+                android:id="@+id/tvwrkun"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etwrkun"
+                android:layout_below="@+id/tvwrkun"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Phone Numer"
+                android:layout_below="@+id/etwrkun"
+                android:id="@+id/tvphnno"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etphnno"
+                android:layout_below="@+id/tvphnno"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email"
+                android:layout_below="@+id/etphnno"
+                android:id="@+id/tvemail"
+
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar"
+                android:id="@+id/etemail"
+                android:layout_below="@+id/tvemail"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:gravity="center"
+                android:id="@+id/btnregister"
+                android:layout_below="@+id/etemail"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vinayism.kartavya" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Kartavya">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Members"
+            android:label="@string/title_activity_members"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Member_List"
+            android:label="@string/title_activity_member__list"
+            android:parentActivityName=".Members" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Members" />
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Login" />
+        </activity>
+        <activity
+            android:name=".Achievements"
+            android:label="@string/title_activity_achievements"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Centre"
+            android:label="@string/title_activity_centre"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Centre_problems"
+            android:label="@string/title_activity_centre_problems"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Post_centreproblem"
+            android:label="@string/title_activity_post_centreproblem"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".Post_achievement"
+            android:label="@string/title_activity_post_achievement"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".UpdateProfile"
+            android:label="@string/title_activity_update_profile"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".Post_meeting1"
+            android:label="@string/title_activity_post_meeting"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".Post_meeting2"
+            android:label="@string/title_activity_post_meeting2"
+            android:parentActivityName=".Post_meeting1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Post_meeting1" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Pm_members"
+            android:label="@string/title_activity_pm_members"
+            android:parentActivityName=".Post_meeting1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Post_meeting1" />
+        </activity>
+        <activity
+            android:name=".Myinfo"
+            android:label="@string/title_activity_myinfo"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".Internship"
+            android:label="@string/title_activity_internship"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Sponsors"
+            android:label="@string/title_activity_sponsors"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Prakash"
+            android:label="@string/title_activity_prakash"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MoreonPrakash"
+            android:label="@string/title_activity_moreon_prakash"
+            android:parentActivityName=".Prakash" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Prakash" />
+        </activity>
+        <activity
+            android:name=".Centre1"
+            android:label="@string/title_activity_centre1"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Centre2"
+            android:label="@string/title_activity_centre2"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Centre3"
+            android:label="@string/title_activity_centre3"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Centre4"
+            android:label="@string/title_activity_centre4"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".Computer_Centre"
+            android:label="@string/title_activity_computer__centre"
+            android:parentActivityName=".Centre" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Centre" />
+        </activity>
+        <activity
+            android:name=".OtherEvents"
+            android:label="@string/title_activity_other_events"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Temp1"
+            android:label="@string/title_activity_temp1"
+            android:parentActivityName=".Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Profile" />
+        </activity>
+        <activity
+            android:name=".Temp2"
+            android:label="@string/title_activity_temp2"
+            android:parentActivityName=".Temp1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vinayism.kartavya.Temp1" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vinayism.kartavya.Prakash">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/prakashpager"
+            android:layout_width="fill_parent"
+            android:layout_height="246dp"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A Brief Information About Prakash"
+        android:id="@+id/title_prakash"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRAKASH is the Annual Event of the Kartavya (an effort of college students towards educated India). \n\n Different Events are organised like Science Event, Social Event ,Case Study etc. Children from Different Schools participate.\n
+                      \n The Winners are awarded with prizes."
+        android:padding="10dp"
+        android:id="@+id/about_prakash"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/title_prakash"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More About Prakash"
+        android:id="@+id/btnprakashmore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

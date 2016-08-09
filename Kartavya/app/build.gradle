@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "vinayism.kartavya"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
+    compile files('libs/GenAsync.1.2.jar')
+    compile files('libs/KGJsonConverter.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.amigold.fundapter:library:1.0'
+    compile 'com.google.android.gms:play-services:9.0.0'
+
+}

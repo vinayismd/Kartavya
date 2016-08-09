@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.app.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Title"
+        android:id="@+id/tvname"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar"
+        android:id="@+id/etpachtitle"
+        android:layout_below="@+id/tvname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description"
+        android:layout_below="@+id/etpachtitle"
+        android:id="@+id/tvadmno"
+
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bar"
+        android:id="@+id/etpachdesc"
+        android:layout_below="@+id/tvadmno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/btnpostcp"
+        android:layout_below="@+id/etpachdesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+
+</RelativeLayout>

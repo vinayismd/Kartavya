@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="vinayism.kartavya.About">
+
+    <TextView android:text="Kartavya is a Non-Governmental Organisation providing free and high quality education to underprivileged children living in slums and villages near college campuses. \n  \n
+              Vision \n \n Kartavya is envisioned to uplift the marginalised citizenry living in slum/village \n \n
+              Mission \n \n Kartavya has a mission to establish kartavya model in prominent colleges and varsities across the country. \n \n
+              Chapters \n \n
+              1. Dhanbad Chapter \n \n
+              2. Ranchi Chapter \n \n
+              3. Agra Chapter \n \n
+              4. Patna Chapter \n "
+
+
+
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
